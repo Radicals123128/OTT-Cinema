@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Cinema - Watch Sports, Movies, TV Shows & Webseries Online</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="assets/images/tp-cinema-logo.png" alt="TP Cinema">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li class="premium"><a href="#">Premium</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li class="dropdown">
+                        <a href="#">More <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">News</a>
+                            <a href="#">Music</a>
+                            <a href="#">Documentaries</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for Movies, Shows, Sports and more">
+            </div>
+            <div class="language-selector">
+                <span>English</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="subscribe-btn">Subscribe</button>
+            <div class="user-profile" onclick="handleProfileClick()">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <!-- Dynamic hero slides will be added here -->
+        </div>
+        <div class="hero-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <div class="main-content">
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Latest & Trending</h2>
+                <button class="view-all">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="content-carousel">
+                
+                <div class="content-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Chhaava_film_poster.jpg" alt="Chhaava">
+                    <div class="content-info">
+                        <h3>Chhaava</h3>
+                        <p>Historic •Action </p>
+                    </div>
+                </div>
+                
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DoFtShSmClflZ0RzBj9JBMweU5IUVBCeEbbLeV2XPlCnTKNi" alt="The Matrix">
+                    <div class="content-info">
+                        <h3>The Matrix</h3>
+                        <p>Sci-Fi • Action</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQovCe0H45fWwAtV31ajOdXRPTxSsMQgPIQ3lcZX_mAW0jXV3kH" alt="Inception">
+                    <div class="content-info">
+                        <h3>Inception</h3>
+                        <p>Sci-Fi • Thriller</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzGMepFMvymqy06LF-NsSpgYxeujNWwbXto-bc868K2bl8-zu6" alt="Dune">
+                    <div class="content-info">
+                        <h3>Dune</h3>
+                        <p>Sci-Fi • Adventure</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Popular in Premium</h2>
+                <button class="view-all">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="content-carousel">
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQauSsP-Enb9M4LHYGAm62_WjtPA_pgviPr0HnSKs7bhUJo9_bh" alt="The Crown">
+                    <div class="content-info">
+                        <h3>The Crown</h3>
+                        <p>Drama • History</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjang2tSfHU_olHQ-m_gzuGMDV-h1wMsAsoagx_ho5GW2KksCy" alt="Stranger Things">
+                    <div class="content-info">
+                        <h3>Stranger Things</h3>
+                        <p>Horror • Sci-Fi</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3ss46_Yje-DijO6HOPfsuWTVTyxzZNLCx14UF7YlpPwgj6SEW" alt="House of Dragons">
+                    <div class="content-info">
+                        <h3>House of Dragons</h3>
+                        <p>Fantasy • Drama</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzNSiBdF8NduudcXQBx-L3sZ4acmAyjCUDAb8Q2W_RpRYgGD59" alt="The Mandalorian">
+                    <div class="content-info">
+                        <h3>The Mandalorian</h3>
+                        <p>Sci-Fi • Action</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Popular Sports</h2>
+                <button class="view-all">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="content-carousel sports-carousel">
+                <div class="content-item">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_1280.jpg" alt="IPL 2024">
+                    <div class="content-info">
+                        <h3>IPL 2024</h3>
+                        <p>Cricket • Live</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://img.olympics.com/images/image/private/t_16-9_1560-880/f_auto/v1538355600/primary/exvtbiqet97uumffbtn6" alt="Premier League">
+                    <div class="content-info">
+                        <h3>Premier League</h3>
+                        <p>Football • Live</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://hoopshype.com/wp-content/uploads/sites/92/2024/08/78_best_nba2.png?w=1000&h=600&crop=1" alt="NBA">
+                    <div class="content-info">
+                        <h3>NBA</h3>
+                        <p>Basketball • Live</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://lavercup.com/wp-content/uploads/2025/01/AT12783-1200x726.jpg" alt="Australian Open">
+                    <div class="content-info">
+                        <h3>Australian Open</h3>
+                        <p>Tennis • Live</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Top Movies</h2>
+                <button class="view-all">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="content-carousel">
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-v82iAoNANJgZ6EATtRCYgJvaXN9L02Dg0V5-0oN9IFOQVluQ" alt="Oppenheimer">
+                    <div class="content-info">
+                        <h3>Oppenheimer</h3>
+                        <p>Drama • History</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY4Eyui9jNTpW7HSDEYhHSKRe_JtxiU-NJG5cCfQhvdf5LlCma" alt="Barbie">
+                    <div class="content-info">
+                        <h3>Barbie</h3>
+                        <p>Comedy • Fantasy</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Mission-_Impossible_%E2%80%93_Dead_Reckoning_Part_One_poster.jpg" alt="Mission Impossible">
+                    <div class="content-info">
+                        <h3>Mission Impossible</h3>
+                        <p>Action • Thriller</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-ES3DHAOhlf9wJZwUEY1Xjm_W7DuMPaxl_8NiMKLOvwEuP5Al" alt="John Wick 4">
+                    <div class="content-info">
+                        <h3>John Wick 4</h3>
+                        <p>Action • Thriller</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Popular TV Shows</h2>
+                <button class="view-all">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="content-carousel">
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJOOBsSXu5RmCS5Y_hvl_g6zaznOgE6VD2Teh3dqqfeiTa00Vk" alt="Wednesday">
+                    <div class="content-info">
+                        <h3>Wednesday</h3>
+                        <p>Fantasy • Comedy</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSm6oVhnKDiwQi22bLIDhYLh_b3TaSPfjGnG0PH9fu_rUpZw7gK" alt="The Last of Us">
+                    <div class="content-info">
+                        <h3>The Last of Us</h3>
+                        <p>Drama • Horror</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuhyop-i0Ld-YvRc4e4AtvwFRjOGCQT8W165zospxSJMloEt2" alt="Loki">
+                    <div class="content-info">
+                        <h3>Loki</h3>
+                        <p>Action • Fantasy</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNwLiJ1sRV1TQYB6PRCQ3lVKVaEmd3HvRvXoNEJnt9cojIjf4n" alt="The Boys">
+                    <div class="content-info">
+                        <h3>The Boys</h3>
+                        <p>Action • Drama</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Popular in Kids</h2>
+                <button class="view-all">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="content-carousel">
+                <div class="content-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtOzQ7EBgKQEtfGoCrVqTgNqCgvrvvqZiDGMwIzr9Zpl1YmGEt" alt="Frozen">
+                    <div class="content-info">
+                        <h3>Frozen</h3>
+                        <p>Animation • Adventure</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3I1sd7LSAioEZqY-ildb4OvNHvbc7QkxS5sOvQB_PUQfhZJz2" alt="Toy Story">
+                    <div class="content-info">
+                        <h3>Toy Story</h3>
+                        <p>Animation • Family</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRc35OBsYaT5o0GrpVKw3ueXDTnbpq5GRdaaSlyl_erdCLA9NE2" alt="Moana">
+                    <div class="content-info">
+                        <h3>Moana</h3>
+                        <p>Animation • Adventure</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu6K8z_pBKeeeG_ew9Xlk-JC0e4FEoE4Qx4nEpxP9dg88BuVze" alt="The Lion King">
+                    <div class="content-info">
+                        <h3>The Lion King</h3>
+                        <p>Animation • Drama</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7IE8YJaJlh3CW-KYU745oE2WzjyvRgKwNyAwe73di_U0uuD5Q" alt="Inside Out">
+                    <div class="content-info">
+                        <h3>Inside Out</h3>
+                        <p>Animation • Comedy</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU870I0G7p7Wan5GucdfL64urOfZrE0HgjXT7z24ss0N8n3TUP" alt="Coco">
+                    <div class="content-info">
+                        <h3>Coco</h3>
+                        <p>Animation • Fantasy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="assets/tp-cinema-logo.png" alt="TP Cinema">
+                </div>
+                <div class="app-download">
+                    <p>Download the App</p>
+                    <div class="store-buttons">
+                        <a href="#" class="store-button">
+                            <img src="assets/google-play.png" alt="Get it on Google Play">
+                        </a>
+                        <a href="#" class="store-button">
+                            <img src="assets/app-store.png" alt="Download on App Store">
+                        </a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Must Watch</h4>
+                    <ul>
+                        <li><a href="#">Top Movies</a></li>
+                        <li><a href="#">Top Shows</a></li>
+                        <li><a href="#">TATA IPL</a></li>
+                        <li><a href="#">Premium Shows</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Content Complaints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Genres</h4>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Viacom18 Media Pvt. Ltd. All rights reserved.</p>
+            <div class="partner-logos">
+                <img src="assets/viacom18-logo.png" alt="Viacom18">
+                <img src="assets/bodhi-tree-logo.png" alt="Bodhi Tree">
+                <img src="assets/reliance-logo.png" alt="Reliance">
+            </div>
+        </section>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
